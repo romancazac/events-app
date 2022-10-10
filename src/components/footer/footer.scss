@@ -1,0 +1,28 @@
+.footer {
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+   z-index: 2;
+   background: rgba(55, 27, 91, 0.7);
+   padding: 15px 0;
+   color: #fff;
+   &__row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__links{
+      display: flex;
+      gap: 15px;
+      li{
+         list-style: none;
+         
+      }
+   }
+   &__link{
+      color: inherit;
+      text-decoration: none;
+      
+   }
+}

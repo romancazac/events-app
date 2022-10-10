@@ -1,0 +1,76 @@
+ul{
+   padding: 0;
+   margin: 0;
+}
+button{
+   border: 0;
+   background-color: transparent;
+   cursor: pointer;
+}
+.container{
+   max-width: 710px;
+   margin: 0 auto;
+   padding: 0 10px
+}
+.container_dash{
+   @extend .container;
+   max-width: 900px;
+}
+.wrapper{
+   
+   &__left{
+      position: relative;
+      height: 100vh;
+      min-width: 0 !important;
+      overflow: hidden;
+      &_dash{
+         background: #EBCDF7;
+         overflow-y: auto;
+      }
+   }
+   &__right{
+      background-image: url('./assets/img/bg-log.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+     
+   
+   }
+   &__left-container{
+      height: 100vh;
+      max-width: 700px;
+      margin: 0 auto;
+   }
+}
+
+.social__row{
+   text-align: right;
+   padding: 65px 40px;
+   color: #fff;
+}
+.form{
+   &__inp{
+      margin: 0 0 30px 0 !important;
+      width: 100%;
+      div{
+         background-color: transparent !important;
+         
+      }
+   }
+   &__btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      border: none;
+      height: 45px;
+      padding: 0 45px;
+      background: linear-gradient(130.57deg, #8E63DF 6.63%, #452260 100%);
+      border-radius: 22px;
+      cursor: pointer;
+      &_cart{
+         background: linear-gradient(135deg, #FFA7E7 0%, #EA6362 100%);
+      }
+   }
+
+}

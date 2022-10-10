@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+
+import * as React from 'react';
+
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Route, Routes } from 'react-router-dom';
+import './App.scss';
+import Dashbord from './pages/Dashbord';
+import LogIn from './pages/LogIn';
 
 function App() {
+  const theme = createTheme({
+    palette: {
+      primary: {
+        light: '#fff',
+        main: '#fff',
+        dark: '#002884',
+        contrastText: '#fff',
+      }
+   
+    }
+  });
+
+  console.log(theme)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<LogIn />} />
+          <Route path="dashbord" element={<Dashbord />} />
+        </Routes>
+      </div>
+    </ThemeProvider>
+
   );
 }
 

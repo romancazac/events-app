@@ -1,0 +1,17 @@
+.header{
+   &_log{
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      z-index: 2;
+   }
+   &_dash{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0;
+      .header__logo{
+         max-width: 163px;
+      }
+   }
+}
