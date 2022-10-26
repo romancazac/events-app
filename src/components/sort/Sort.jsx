@@ -21,7 +21,7 @@ const Sort = () => {
    const onFilter = () =>{
      
    }
-   console.log(date)
+   // console.log(date)
    return (
       <div className='sort'>
          <Modals

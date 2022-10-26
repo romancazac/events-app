@@ -1,0 +1,77 @@
+.header-chat {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   &__img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+   }
+
+   &__name {
+      font-size: 18px;
+
+   }
+
+   &__info {
+      margin-right: 15px;
+      text-align: center;
+   }
+}
+
+.chat {
+   &__title {
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 30px;
+      color: #512F7C;
+      opacity: 0.5;
+      margin: 0 0 60px 0;
+   }
+
+   &__row {
+      display: flex;
+      margin: 0 0 40px 0;
+
+      &:last-child {
+         margin: 0;
+      }
+   }
+
+   &__l {
+      display: flex;
+      align-items: center;
+      svg{
+         width: 15px;
+         fill: #371B5B;
+      }
+   }
+
+   &__img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 15px;
+   }
+
+   &__r {}
+
+   &__text {
+      font-size: 16px;
+      line-height: 19px;
+      color: #371B5B;
+      margin: 0 0 3px 0;
+   }
+
+   &__subtext {
+
+      font-size: 12px;
+      line-height: 14px;
+      color: #766E8F;
+
+   }
+
+}

@@ -3,14 +3,14 @@ import Modals from '../Modal'
 import Btn from '../ui/Btn'
 
 import './cart.scss'
-const Cart = ({ id, img, title, data, hora, adress, descr }) => {
+const Cart = ({ id, img, title, date, hora, adress, descr }) => {
    return (
       <div className='cart__column'>
          <img src={img} alt={title} className="cart__img" />
          <div className="cart__content">
             <h4 className="cart__title">{title}</h4>
             <div className="cart__info">
-               <span>{data} | {hora}</span>
+               <span>{date} | {hora}</span>
             </div>
             <p className="cart__descr">{adress}</p>
             <div className="cart__footer">
@@ -28,7 +28,7 @@ const Cart = ({ id, img, title, data, hora, adress, descr }) => {
                      <div className="cart__content">
                         <h4 className="cart__title">{title}</h4>
                         <div className="cart__info">
-                           <span>{data} | {hora}</span>
+                           <span>{date} | {hora}</span>
                         </div>
                         <p className="cart__descr">{adress}</p>
                         <p className="cart__descr">{descr}</p>
